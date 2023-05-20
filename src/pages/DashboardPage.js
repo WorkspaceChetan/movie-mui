@@ -51,7 +51,7 @@ const DashboardPage = () => {
         ) : (
           <Grid container spacing={3}>
             {filteredMovies.map((movie, index) => (
-              <Grid item xs={12} md={4} lg={2} key={movie.imdbID}>
+              <Grid item xs={12} sm={6} md={6} lg={3} xl={2} key={movie.imdbID}>
                 <MovieCard
                   index={index}
                   selectedMovie={filteredMovies[selectedIndex]}

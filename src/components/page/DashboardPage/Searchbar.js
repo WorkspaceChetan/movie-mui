@@ -30,6 +30,7 @@ const Searchbar = ({
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            gap: 1,
           }}
         >
           <IconButton onClick={handleOpenSearchBar}>

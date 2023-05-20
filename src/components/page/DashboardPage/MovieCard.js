@@ -24,13 +24,15 @@ const MovieCard = ({ index, selectedMovie, handleMovieCardClick, movie }) => {
           <Paper
             elevation={0}
             sx={{
-              height: "188px",
+              height: { xs: "375px", lg: "275px", xl: "200px" },
               borderRadius: "11px",
               overflow: "hidden",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              backgroundImage: `url(${movie.Poster})`,
             }}
-          >
-            <img src={movie.Poster} alt="" style={{ width: "100%" }}></img>
-          </Paper>
+          ></Paper>
           <Typography
             align="left"
             sx={{
